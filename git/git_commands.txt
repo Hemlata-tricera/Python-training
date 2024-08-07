@@ -1,5 +1,4 @@
 # Git Commands
-
 1. git init: Initialize a new Git repository.
 2. git clone [url]:  The clone command is used to create a local copy of a project that already exists remotely.
 3. git status: This command displays the status of changes as untracked, modified, or staged.
@@ -10,3 +9,9 @@
 8. git branch: It lists all the branches in your repository, and also tells you what branch you're currently in.
 9. git checkout [branch-name]: Switch to a specific branch.
 10. git log: View the commit history.
+11. git checkout[branch-name] - to navigate
+12. git checkout -b[new-branch-name]-to create new branch
+13. git branch-d[branch-name]-to delete branch
+14. git branch -a -List all remote or local branches
+
+
