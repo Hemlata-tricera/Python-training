@@ -1,0 +1,4 @@
+11. git checkout[branch-name] - to navigate
+12. git checkout -b[new-branch-name]-to create new branch
+13. git branch-d[branch-name]-to delete branch
+14. git branch -a -List all remote or local branches
