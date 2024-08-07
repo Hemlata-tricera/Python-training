@@ -8,3 +8,5 @@
 6. git push: Push changes to a remote repository.
 7. git pull: Fetch and merge changes from a remote repository.
 8. git branch: It lists all the branches in your repository, and also tells you what branch you're currently in.
+9. git checkout [branch-name]: Switch to a specific branch.
+10. git log: View the commit history.
