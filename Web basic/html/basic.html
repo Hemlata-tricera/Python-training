@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
+<!--Header tag-->
+<header>
+    <h1>HTML Tags</h1>
+</header>
 <!--Heading Tags-->
 <h1>This is heading 1</h1>
 <h2>This is heading 2</h2>
@@ -11,7 +15,7 @@
 <!--Paragraph Tag-->
 <p>This is my paragraph</p>
 <!--link/anchor tag-->
-<a href="https://www.w3schools.com">This is a link</a>
+<a href="https://www.w3schools.com" target="_main">This is a link</a>
 <!--html styles-->
 <h1 style="background-color:powderblue;">This is a heading</h1>
 <p style="background-color:tomato;">This is a paragraph.</p>
@@ -21,10 +25,141 @@
 <p style="font-family:courier;">This is a paragraph.</p>
 
 <!--html Formating-->
+<b>This text is bold</b>
+<i>This text is italic</i>
+<em>This text is emphasized</em>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+<p>My favorite color is <del>blue</del> red.</p>
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+<p>This is <sub>subscripted</sub> text.</p>
+<p>This is <sup>superscripted</sup> text.</p>
+<!--html Colors-->
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+<!--image tag-->
+<img src="notebk.jpg" alt="notebook image" height="75px" width="65px">
+
+<!--Subscript and Superscript examples-->
+<p>H<sub>2</sub>O</p>
+<p>A<sup>2</sup>+B</p>
+<!--Div tag-->
+<div>
+    <p>Hello World</p>
+    <p>Namste</p>
+    <p>hi</p>
+</div>
+<!--Span tag-->
+<span>bye</span>
+<!--Ordered List-->
+<ol>
+    <li>Apple</li>
+     <ul>
+         <li>color:red</li>
+         <li>season: Winters</li>
+     </ul>
+    <li>Mango</li>
+    <ul>
+         <li>color:yellow</li>
+         <li>season:Summer</li>
+     </ul>
+
+</ol>
+<!--Unordered List-->
+<ul>
+    <li>Apple</li>
+     <ul>
+         <li>color:red</li>
+         <li>season: Winters</li>
+     </ul>
+    <li>Mango</li>
+    <ul>
+         <li>color:yellow</li>
+         <li>season:Summer</li>
+     </ul>
+
+</ul>
+<!--Table Tag-->
+<table>
+
+    <caption>Student Data</caption>
+
+    <tr>
+        <th COLSPAN="2">INFORMATION</th>
+    </tr>
+
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>XYZ</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>PQR</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>ABC</td>
+    </tr>
+    </tbody>
+</table>
+<!--Form tag-->
+<h3>Registration Form</h3>
+<form action="/action.php">
+    <input type="text" placeholder="Username">
+    <br><br>
+    <input type="password" placeholder="Password">
+    <br><br>
+    <h5>Select your Class</h5>
+    <label for="101">
+        <input type="radio" value="XI" name="class" id="101">Class XI
+    </label>
+    <br><br>
+
+    <label for="102">
+        <input type="radio" value="XII" name="class" id="102">Class XII
+    </label>
+    <h5>Select your Fav Subjects</h5>
+    <label for="math">
+        <input type="checkbox" value="math" id="101">Math
+    </label>
+    <label for="phy">
+        <input type="checkbox" value="math" id="102">Physics
+    </label>
+    <label for="comp">
+        <input type="checkbox" value="comp" id="103">Computer Science
+    </label>
+    <label for="chem">
+        <input type="checkbox" value="chem" id="104">Chemistry
+    </label>
+    <br><br>
+    <textarea name="feedback" id="101" placeholder="Please give your valueable feedback here" rows="5"></textarea>
+    <br>
+    Select your city
+    <select name="city">
+        <option value="Delhi">Delhi</option>
+        <option value="Pune">Pune</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Mumbai">Mumbai</option>
+    </select>
+    <br>
+    <input type="submit" value="submit">
+     <br>
+<!-- Iframe tag   -->
+    <iframe src="https://www.wikipedia.org"></iframe>
+<!-- Video tag-->
 
 
 
-
+</form>
+<footer>
+    <h5>     Contact me at hello@ac.com </h5>
+</footer>
 </body>
 </html>
 
