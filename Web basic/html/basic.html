@@ -111,9 +111,35 @@
 <!--Form tag-->
 <form action="/action.php">
     <input type="text" placeholder="Username">
+    <br><br>
     <input type="password" placeholder="Password">
-    <input type="radio" value="XI" name="class">Class XI
-    <input type="radio" value="XII" name="class">Class XII
+    <br><br>
+    <h5>Select your Class</h5>
+    <label for="101">
+        <input type="radio" value="XI" name="class" id="101">Class XI
+    </label>
+    <br><br>
+
+    <label for="102">
+        <input type="radio" value="XII" name="class" id="102">Class XII
+    </label>
+    <h5>Select your Fav Subjects</h5>
+    <label for="math">
+        <input type="checkbox" value="math" id="101">Math
+    </label>
+    <label for="phy">
+        <input type="checkbox" value="math" id="102">Physics
+    </label>
+    <label for="comp">
+        <input type="checkbox" value="comp" id="103">Computer Science
+    </label>
+    <label for="chem">
+        <input type="checkbox" value="chem" id="104">Chemistry
+    </label>
+    <br><br>
+    <textarea name="feedback" id="101" placeholder="Please give your valueable feedback here" rows="5">Feedback</textarea>
+
+
 
 
 </form>
