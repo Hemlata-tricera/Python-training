@@ -8,7 +8,12 @@ text-decoration-color:purple
 }
 a{
     text-decoration:none;
+
 }
+a:hover{
+    color:red;
+}
+
 form.round{
   border: 2px solid red;
   border-radius: 12px;
