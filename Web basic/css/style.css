@@ -1,6 +1,14 @@
 body {
   background-color: linen;
 }
+#main_head{
+text-align:center;
+text-decoration-line: underline overline;
+text-decoration-color:purple
+}
+a{
+    text-decoration:none;
+}
 form.round{
   border: 2px solid red;
   border-radius: 12px;
