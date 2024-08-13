@@ -4,5 +4,7 @@ body {
 form.round{
   border: 2px solid red;
   border-radius: 12px;
-  padding: 5px;
+  /*padding:0px 0px 15px 150px; */
+  width:40%;
+  text-align:center;
 }
