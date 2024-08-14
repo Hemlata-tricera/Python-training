@@ -13,6 +13,9 @@ a{
 a:hover{
     color:red;
 }
+li{
+    display:inline;
+}
 
 form.round{
   border: 2px solid red;
