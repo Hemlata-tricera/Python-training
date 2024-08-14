@@ -1,5 +1,5 @@
 a{
-    display:inline-block;
+
     color:white;
     text-decoration:none;
 
@@ -7,4 +7,13 @@ a{
 .page-header{
     background-color:#5e606c;
     color:white;
+}
+
+.footer{
+    background-color:#5e606c;
+
+}
+li{
+    display:inline-block;
+    padding:5px;
 }
