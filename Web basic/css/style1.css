@@ -11,13 +11,25 @@ a{
 img{
 
     width:100%;
+
 }
 .footer{
     background-color:#5e606c;
     color:white;
+    position: fixed;
+    bottom: 0;
+    width:100%;
 
 }
 li{
     display:inline-block;
     padding:5px;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: center;
+  width: 200px;
+
+
 }
