@@ -14,6 +14,7 @@ nav.nav{
     align-items: center;
 
 }
+
 img{
     height:450px;
     width:100%;
@@ -21,11 +22,15 @@ img{
 
 }
 .footer{
+    display:flex;
     background-color:#5e606c;
     color:white;
-    position: justify;
-    bottom: 0;
-    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    font-size:15px;
+    align-items:center;
+    justify-content:center;
+
 
 }
 li{
