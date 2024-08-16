@@ -32,7 +32,9 @@ li{
     display:inline-block;
     padding:25px;
 }
-
+a:hover{
+    color:black;
+}
 div.container {
   background-color:#c4c4be;
   margin: 5px;
