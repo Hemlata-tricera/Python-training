@@ -8,28 +8,46 @@ a{
     background-color:#5e606c;
     color:white;
 }
-img{
+nav.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+}
+img{
+    height:450px;
     width:100%;
+
 
 }
 .footer{
     background-color:#5e606c;
     color:white;
-    position: fixed;
+    position: justify;
     bottom: 0;
     width:100%;
 
 }
 li{
     display:inline-block;
-    padding:5px;
+    padding:25px;
 }
-div.gallery {
+
+div.container {
+  background-color:#c4c4be;
   margin: 5px;
-  border: 1px solid #ccc;
-  float: center;
-  width: 200px;
 
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  justify-content:space-between;
+  align-items:center;
 
+}
+div img{
+    width:420px;
+    height:300px;
+    border-radius:13px;
+    margin:10px;
 }
