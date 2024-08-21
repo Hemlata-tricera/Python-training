@@ -24,9 +24,11 @@ const product = {
     price: 270,
 };
 console.log(typeof product);
-document.write("type of product is",'<br>', typeof product["title"]);
+document.write("type of product is",'<br>', typeof product["title"],'<br>');
 console.log(typeof product["title"]);
 
-
+//Array Datatype
+const cars = ["Saab","Volvo","BMW"];
+document.write("Cars name-", cars);
 
 
