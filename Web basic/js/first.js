@@ -123,7 +123,68 @@ console.log(test.length);
 const s = "HELLO WORLD";
 console.log(s.charAt(0));
 console.log(s.charCodeAt(0));
-console.log(s.at(2));
+//console.log(s.at(2));
+console.log(s[2]);
+console.log(s[0]);
+console.log(s[0]);
+console.log(s.slice(2,8));
+console.log(s.slice(2));
+console.log(s.slice(-16));
+console.log(s.slice(-9,-3));
+console.log(s.substring(2,8));
+console.log(s.substring(2));//If you omit the second parameter, substr() will slice out the rest of the string.
+console.log(s.substring(-2));//If the first parameter is negative, the position counts from the end of the string.
+console.log(s.toLowerCase());//Convert string to lower case
+console.log(s);
+s1 = " Hello ";
+s2 = "World! ";
+console.log(s1.concat(" ", s2));//concat() joins two or more strings
+console.log(s1.trim());//The trim() method removes whitespace from both sides of a string:
+console.log(s1.trimStart());//The trimStart() method works like trim(), but removes whitespace only from the start of a string.
+console.log(s1.trimEnd());//The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+console.log(s1.padStart(12,"0"));//It pads the string with another string (multiple times) until it reaches a given length.
+console.log(s1.padStart(12,"x"));//It pads the string with another string (multiple times) until it reaches a given length.
+let numb = 5;
+let numb1 = numb.toString();
+console.log(numb1.padStart(4,"0"));
+console.log(numb1.padEnd(4,"0"));//The padEnd() method pads a string from the end.
+console.log(numb1.padEnd(4,"x"));
+
+console.log(s.repeat(2));/*The repeat() method returns a string with a number of copies of a string.The repeat() method returns a new string.
+The repeat() method does not change the original string.*/
+console.log(s.replace("WORLD", "JS"));//The replace() method replaces a specified value with another value in a string:
+console.log(s.replace(/world/i, "JS"));//To replace case insensitive, use a regular expression with an /i flag (insensitive)
+console.log(s.split(","));
+const myArray = s.split("");
+console.log(myArray[0]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
