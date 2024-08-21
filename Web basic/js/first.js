@@ -24,23 +24,43 @@ const product = {
     price: 270,
 };
 console.log(typeof product);
-document.write("type of product is",'<br>', typeof product["title"],'<br>');
+console.log("type of product is", typeof product["title"]);
 console.log(typeof product["title"]);
 
 //Array Datatype
 const cars = ["Saab","Volvo","BMW"];
-document.write("Cars name-", cars,'<br>');
+console.log("Cars name-", cars);
 
 //Operator
 //Arithmatic operator
-document.write("Arithamatic Operators-->",'<br>');
-let a = 10+20;
-document.write("Addition is", a,'<br>');
-b = 10-20;
-document.write("substraction is", b,'<br>');
-let c = 10*20;
-document.write("multiplication is", c,'<br>');
-let d = 10/20;
-document.write("Division is", a,'<br>');
+console.log("Arithamatic Operators-->");
+let a = 20;
+let b = 10;
+console.log("Addition is", a + b);
+console.log("substraction is", a - b);
+console.log("multiplication is", a * b);
+console.log("Division is", a / b);
+console.log("Remainder is", a % b);
+a++;
+let c = a;
+console.log("Increment of a is", c++);
+a--;
+c = a;
+console.log("Decrement of a is", c--);
+
+console.log("exponentiation of a is", a**2);
+
+
+
+
+
+
+//Increament ++ operator
+
+//consol
+//let p = 5;
+//p++;
+//let q = p;
+
 
 
