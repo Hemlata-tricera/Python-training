@@ -65,6 +65,8 @@ console.log("a>b", a > b);
 console.log("a<b", a < b);
 console.log("a>=b", a >= b);
 console.log("a<=b", a <= b);
+
+
 //Logical Operators
 
 //let cond1 = a > b;
@@ -115,6 +117,20 @@ let test = `He's often called "Johnny"`;
 console.log(test);
 //The length Property
 console.log(test.length);
+
+
+//String Methods
+const s = "HELLO WORLD";
+console.log(s.charAt(0));
+console.log(s.charCodeAt(0));
+console.log(s.at(2));
+
+
+
+
+
+
+
 
 
 
