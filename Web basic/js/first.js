@@ -49,6 +49,26 @@ c = a;
 console.log("Decrement of a is", c--);
 
 console.log("exponentiation of a is", a**2);
+//JavaScript Comparison Operators
+console.log("a==b", a == b);
+let p = "Aai";
+let q = "Aai";
+console.log("p===q", p === q);
+console.log("a===b", a == b);
+console.log("a!=b", a != b);
+console.log("a!==b", a !== b);
+console.log("a>b", a > b);
+console.log("a<b", a < b);
+console.log("a>=b", a >= b);
+console.log("a<=b", a <= b);
+
+
+
+
+
+
+
+
 
 
 //Assignment Operator
