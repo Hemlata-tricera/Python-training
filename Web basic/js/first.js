@@ -61,6 +61,21 @@ console.log("a>b", a > b);
 console.log("a<b", a < b);
 console.log("a>=b", a >= b);
 console.log("a<=b", a <= b);
+//Logical Operators
+
+//let cond1 = a > b;
+//let cond2 = a !=  b;
+console.log("a > b && a != b", a > b && a != b);
+console.log("a < b || a == b", a < b || a == b);
+console.log("! (6 < 5)", ! (6 < 5));
+
+
+
+
+
+
+
+
 
 
 
