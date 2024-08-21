@@ -104,6 +104,18 @@ text = myFunction(5, 5)
 console.log("The square of 5 is", text);//Using a function as a variable:
 
 
+//JS String
+//You can use quotes inside a string, as long as they don't match the quotes surrounding the string.
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+console.log(answer1, answer2, answer3);
+//With back-ticks, you can use both single and double quotes inside a string:
+let test = `He's often called "Johnny"`;
+console.log(test);
+//The length Property
+console.log(test.length);
+
 
 
 
