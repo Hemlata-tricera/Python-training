@@ -29,6 +29,18 @@ console.log(typeof product["title"]);
 
 //Array Datatype
 const cars = ["Saab","Volvo","BMW"];
-document.write("Cars name-", cars);
+document.write("Cars name-", cars,'<br>');
+
+//Operator
+//Arithmatic operator
+document.write("Arithamatic Operators-->",'<br>');
+let a = 10+20;
+document.write("Addition is", a,'<br>');
+b = 10-20;
+document.write("substraction is", b,'<br>');
+let c = 10*20;
+document.write("multiplication is", c,'<br>');
+let d = 10/20;
+document.write("Division is", a,'<br>');
 
 
