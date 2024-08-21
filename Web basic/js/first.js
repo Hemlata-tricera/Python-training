@@ -95,6 +95,21 @@ console.log("5 << 1 ", 5 << 1);
 console.log("5 >> 1 ", 5 >> 1);
 console.log("5 >>> 1 ", 5 >>> 1);
 
+//JS Function
+function myFunction(p1, p2){
+    return p1 * p2;
+}
+console.log(myFunction(5, 5));
+text = myFunction(5, 5)
+console.log("The square of 5 is", text);//Using a function as a variable:
+
+
+
+
+
+
+
+
 
 
 
