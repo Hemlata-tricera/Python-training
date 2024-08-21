@@ -51,16 +51,21 @@ console.log("Decrement of a is", c--);
 console.log("exponentiation of a is", a**2);
 
 
+//Assignment Operator
+console.log("Addition assignment of a is", a += 5);
+console.log("Subtraction assignment of a is", a -= 5);
+console.log("Multiplication assignment of a is", a *= 5);
+console.log("Exponentiation assignment of a is", a **= 2);
+console.log("Division assignment of a is", a /= 5);
+console.log("Remainder assignment of a is", a %= 5);
+console.log("Left Shift assignment of a is", a += 5);
+console.log("Right shift assignment of a is", a += 5);
 
 
 
 
-//Increament ++ operator
 
-//consol
-//let p = 5;
-//p++;
-//let q = p;
+
 
 
 
