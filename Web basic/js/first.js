@@ -6,6 +6,9 @@ let fullName = "Hemlata V. Raghuvanshi" //string
 isFollow = true; //Boolean
 let x;  //undefined
 let y = null; //
+// Date object:
+const date = new Date("2024-08-08");
+console.log("date" , date);
 //Object Example 1
 const student = {
     name: "Hemlata",
@@ -53,6 +56,7 @@ console.log("exponentiation of a is", a**2);
 console.log("a==b", a == b);
 let p = "Aai";
 let q = "Aai";
+console.log(p + " " + q);//String concatination
 console.log("p===q", p === q);
 console.log("a===b", a == b);
 console.log("a!=b", a != b);
@@ -71,21 +75,6 @@ console.log("! (6 < 5)", ! (6 < 5));
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Assignment Operator
 console.log("Addition assignment of a is", a += 5);
 console.log("Subtraction assignment of a is", a -= 5);
@@ -93,8 +82,19 @@ console.log("Multiplication assignment of a is", a *= 5);
 console.log("Exponentiation assignment of a is", a **= 2);
 console.log("Division assignment of a is", a /= 5);
 console.log("Remainder assignment of a is", a %= 5);
-console.log("Left Shift assignment of a is", a += 5);
-console.log("Right shift assignment of a is", a += 5);
+console.log("Left Shift assignment of a is", a <<= 5);
+console.log("Right shift assignment of a is", a >>= 5);
+
+
+//Bitwise Operator
+console.log("5 & 1 ", 5 & 1);
+console.log("5 | 1 ", 5 | 1);
+console.log("~ 5 ", ~ 5);
+console.log("5 ^ 1 ", 5 ^ 1);
+console.log("5 << 1 ", 5 << 1);
+console.log("5 >> 1 ", 5 >> 1);
+console.log("5 >>> 1 ", 5 >>> 1);
+
 
 
 
