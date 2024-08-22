@@ -240,8 +240,19 @@ for (let x in person) {
 for( const c of "Hemlata"){
     console.log(c);
 }
+//While loop
+let i1 = 0;
+while ( i1 < 6){
+    console.log(i1);
+    i1++;
+}
 
-
+//do While loop
+let i = 0;
+do{
+    console.log(i)
+    i++;
+} while ( i < 5 );
 
 
 
