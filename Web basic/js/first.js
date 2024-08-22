@@ -171,13 +171,26 @@ console.log(hello("Dolly"));
 hello = val => "HEllo" + val;//In fact, if you have only one parameter, you can skip the parentheses as well:
 console.log(hello("Dolly"));
 
+//Conditional Statements
+const hour = new Date().getHours();
+let greeting;
+//The if else Statement
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good Evening";
+}
+console.log(greeting);
+//The else if Statement
+if (hour < 10 ){
+    greeting = "Good Morning!";
+} else if ( hour < 20 ) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
 
-
-
-
-
-
-
+console.log( greeting );
 
 
 
