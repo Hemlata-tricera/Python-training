@@ -220,12 +220,26 @@ switch (new Date().getDay()) {
 }
 
 console.log( "Today is", + day );
+//for loop
 
+let t1 = 1;
 
+for (let i = 0; i < 5; i++) {
+    console.log( t1 + i);
+}
 
+//For in loop example
+const person = {fname:"John", lname:"Doe", age:25};
 
+let txt = "";
+for (let x in person) {
+  console.log(x);
+}
 
-
+// For of loop
+for( const c of "Hemlata"){
+    console.log(c);
+}
 
 
 
