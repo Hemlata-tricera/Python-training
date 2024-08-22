@@ -158,6 +158,21 @@ console.log(s.split(","));
 const myArray = s.split("");
 console.log(myArray[0]);
 
+//******DAY-11********//
+//Arrow Function
+let myFun = (a, b) => a * b;//Arrow functions allow us to write shorter function syntax
+console.log(myFun(10, 20));
+
+hello = () => "Hello World";//This works only if the function has only one statement.
+console.log(hello());
+//Arrow Function With Parameters:
+hello = (val) => "Hello" + val;
+console.log(hello("Dolly"));
+hello = val => "HEllo" + val;//In fact, if you have only one parameter, you can skip the parentheses as well:
+console.log(hello("Dolly"));
+
+
+
 
 
 
