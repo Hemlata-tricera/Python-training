@@ -158,22 +158,104 @@ console.log(s.split(","));
 const myArray = s.split("");
 console.log(myArray[0]);
 
+//******DAY-11********//
+//Arrow Function
+let myFun = (a, b) => a * b;//Arrow functions allow us to write shorter function syntax
+console.log(myFun(10, 20));
 
+hello = () => "Hello World";//This works only if the function has only one statement.
+console.log(hello());
+//Arrow Function With Parameters:
+hello = (val) => "Hello" + val;
+console.log(hello("Dolly"));
+hello = val => "HEllo" + val;//In fact, if you have only one parameter, you can skip the parentheses as well:
+console.log(hello("Dolly"));
 
+//Conditional Statements
+const hour = new Date().getHours();
+let greeting;
+//The if else Statement
+if (hour < 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good Evening";
+}
+console.log(greeting);
+//The else if Statement
+if (hour < 10 ){
+    greeting = "Good Morning!";
+} else if ( hour < 20 ) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
 
+console.log( greeting );
 
+//JS Switch Statement
+let day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+         day = "Wednesday";
+         break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case  6:
+        day = "Saturday";
+    default:
+        text = "Looking forward to the Weekend";
+}
 
+console.log( "Today is", + day );
+//for loop
 
+let t1 = 1;
 
+for (let i = 0; i < 5; i++) {
+    console.log( t1 + i);
+}
 
+//For in loop example
+const person = {fname:"John", lname:"Doe", age:25};
 
+let txt = "";
+for (let x in person) {
+  console.log(x);
+}
 
+// For of loop
+for( const c of "Hemlata"){
+    console.log(c);
+}
+//While loop
+let i1 = 0;
+while ( i1 < 6){
+    console.log(i1);
+    i1++;
+}
 
+//do While loop
+let i = 0;
+do{
+    console.log(i)
+    i++;
+} while ( i < 5 );
 
-
-
-
-
+//Events
+//in first.html file
 
 
 
