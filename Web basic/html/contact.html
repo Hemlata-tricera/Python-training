@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Contact</title>
     <style>
-input[type=text], textarea, email {
+input[type=text], textarea, email, input[type=password], input[type=phone] {
 width:50%;
 padding: 12px;
 border: 1px solid #ccc;
@@ -32,22 +32,26 @@ input[type=submit] {
 
 }
     </style>
+     <script src="../js/contact.js"></script>
 </head>
 <body>
     <h2>CONTACT US</h2>
-    <form class="contact-form">
+    <form class="contact-form" name="myForm" action="test.html" onsubmit="return data()" method="post">
         <input type="text" id="name" name="name" placeholder="Your Name"><br><br>
         <input type="text" id="email" name="email" placeholder="Your Email"><br><br>
         <input type="password" id="pass" name="pass" placeholder="Your Password"><br><br>
         <input type="phone" id="phone" name="phone" placeholder="Your Phone number"><br><br>
         <input type="text" id="website" name="website" placeholder="Your Website"><br><br>
         <input type="text" id="company" name="company" placeholder="Your Company"><br><br>
-        <textarea placeholder="Your Comment" rows="8"></textarea><br>
+        <textarea id="address" placeholder="Your Comment" rows="8"></textarea><br>
 
         <input type="submit" value="Send Message">
 
     </form>
     <p>We will contact you within one business day.</p>
+
+
+
 
 </body>
 </html>
