@@ -1,3 +1,5 @@
+//*******DAY -13***************
+
 //DOM-The Document Object Model (DOM)
 //is a programming interface for web documents that allows programs to change a document's structure, style, and content.
 
@@ -56,6 +58,27 @@ let id1 = div.setAttribute("id", "box1");
 console.log(id1);
 
 
-//***********Style***********8
+//***********Style***********
 
 //node.style
+let changeColor = document.getElementById("heading");
+changeColor.style.color = "red";
+
+
+//******INSERT ELEMENTS***********
+
+let newBtn = document.createElement("button");//Create Element
+newBtn.innerText = "Please click me";
+console.log(newBtn);
+
+//Now insert element using below methods
+
+//1)node.append(el)-->adds the end of node(inside)
+let div1 = document.querySelector("div");
+div1.append(newBtn);
+
+//2)node.prepend(el)-->adds the start of node(inside)
+//3)node.before(el)-->adds before node(outside)
+//4)node.after(el)-->adds after the node(outside)
+
+
