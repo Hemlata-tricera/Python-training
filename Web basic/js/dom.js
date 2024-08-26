@@ -1,7 +1,17 @@
 //*******DAY -13***************
+/*Window object BOM & DOM
+BOM-The Browser Object Model (BOM) is used to interact with the browser.
+The default object of browser is window means you can call all the functions of window by specifying window or directly.
+For example:
 
-//DOM-The Document Object Model (DOM)
-//is a programming interface for web documents that allows programs to change a document's structure, style, and content.
+window.alert("hello javatpoint");
+is same as:
+
+alert("hello javatpoint");
+You can use a lot of properties (other objects) defined underneath the window object like document, history, screen, navigator, location, innerHeight, innerWidth.
+
+DOM-The Document Object Model (DOM)
+is a programming interface for web documents that allows programs to change a document's structure, style, and content.*/
 
 //****DOM Manipulation*****
 //Selecting with id -->document.getElementById
@@ -80,5 +90,6 @@ div1.append(newBtn);
 //2)node.prepend(el)-->adds the start of node(inside)
 //3)node.before(el)-->adds before node(outside)
 //4)node.after(el)-->adds after the node(outside)
+
 
 
