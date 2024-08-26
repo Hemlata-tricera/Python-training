@@ -93,3 +93,11 @@ div1.append(newBtn);
 
 
 
+//***********ARRAY************
+
+let marks = [97, 82, 23, 56, 67];
+console.log(marks);
+console.log(marks.length);//property
+
+let heroes = ['spiderman', 'shaktiman', 'ironman', 'hulk'];
+console.log(heroes);
