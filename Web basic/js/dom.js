@@ -43,3 +43,16 @@ changePara.innerText = "New para";
 //textContent : returns textual content even for hidden elements.
 
 
+//**********Attributes*******************
+//getAttribute(attr)-->to get the attribute value
+let div = document.querySelector("div")
+console.log(div);
+
+let id = div.getAttribute("id");
+console.log(id);
+
+//setAttribute(attr, value)//to set attribute value
+let id1 = div.setAttribute("id", "box1");
+console.log(id1);
+
+
