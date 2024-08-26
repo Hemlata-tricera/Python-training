@@ -56,3 +56,6 @@ let id1 = div.setAttribute("id", "box1");
 console.log(id1);
 
 
+//***********Style***********8
+
+//node.style
