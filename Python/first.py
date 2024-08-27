@@ -97,3 +97,34 @@ print(type(x))
 print(type(y))
 print(type(z))
 
+# -----------------------------------------------------------------------------------------------------------------------------------
+# LIST
+list1 = ["abc", 34, True, 40, "male"]
+print(list1)
+print(type(list1))
+
+thislist = list(("apple", "banana", "cherry", "papaya", "grapes")) # Creating a new list using list() constructor
+print(thislist)
+
+print(thislist[1]) # Access list item
+print(thislist[-1])
+# Range of Indexes
+print(thislist[:2])
+print(thislist[2:])
+print(thislist[:4])
+print(thislist[1:4])
+# Range of Negative Indexes
+print(thislist[-4:-1])
+# Check if Item Exists
+if "apple" in thislist:
+    print("Yes! apple is in thislist")
+# Change Item Value
+thislist[0] = "mango"
+print(thislist)
+# Change a Range of Item Values
+thislist[1:3] = ["apple", "strawberry"]
+print(thislist)
+
+# Insert Items
+thislist.insert(2, "guava")
+print(thislist)
