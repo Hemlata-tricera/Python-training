@@ -1,3 +1,5 @@
+
+
 const submitEl = document.getElementById("submit");
 submitEl.addEventListener("click", () => {
     console.log("Hey");
@@ -69,6 +71,21 @@ function requiredValidation(id, errorId) {
     return isEmpty;
 }
 
+//let errorColor = document.getElementById("nameError");
+//errorColor.style.color = "red";
+
+let errorColor = document.querySelectorAll("div");
+console.log(errorColor);
+
+for ( let i=0; i<5; i++){
+    errorColor[i].style.color = "red";
+}
+
+
+
+
+
+//errorColor.style.color = "red";
 
 //const el = document.getElementById("submit");
 //function doSomething() {
