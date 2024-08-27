@@ -151,3 +151,99 @@ print(thislist)
 print(fruitlist)
 fruitlist.clear()
 print(fruitlist)
+# Loop Through a List
+for x in thislist:
+    print(x)
+for i in range(len(thislist)):
+    print(thislist[i])
+# Looping Using List Comprehension
+[print(x) for x in thislist]
+# List Comprehension
+
+
+#-------------------------------------------------------------------------------------------------------------------------
+# OPERATORS
+# Arithmetic Operators
+x = 5
+y = 3
+print(x + y)  # Addition
+print(x - y)  # Subtraction
+print(x * y)  # Multiplication
+print(x / y)  # Division
+print(x % y)  # Modulus
+print(x ** y)  # Exponentiation
+print(x // y)  # Floor division
+# Assignment Operators
+x += 3
+print(x)
+x -= 3
+print(x)
+x *= 3
+print(x)
+x /= 3
+print(x)
+x %= 3
+print(x)
+x //= 3
+print(x)
+x **= 3
+print(x)
+x = 5
+x &= 3
+print(x)
+
+
+
+
+
+# Comparision Operators
+x = 5
+y = 3
+print(x == y)
+print(x != y)
+print(x > y)
+print(x < y)
+print(x >= y)
+print(x <= y)
+# Logical Operators
+x = 5
+print("Logical Operator")
+print(x > 3 and x < 10)
+print(x < 5 or x < 4)
+print(not(x < 5 or x < 4))
+
+# Identity Operators
+print("Identity Operators")
+x = ["apple", "banana"]
+y = ["apple", "banana"]
+z = x
+
+print(x is z)
+print(x is y)  # returns False because x is not the same object as y, even if they have the same content
+print(x == y)
+
+# Membership Operators
+print("Membership Operators")
+x = ["apple", "banana"]
+print("banana" in x)
+print("apple" in x)
+print("pineapple" not in x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
