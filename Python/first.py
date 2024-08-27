@@ -124,7 +124,30 @@ print(thislist)
 # Change a Range of Item Values
 thislist[1:3] = ["apple", "strawberry"]
 print(thislist)
-
 # Insert Items
 thislist.insert(2, "guava")
 print(thislist)
+
+# Append Items
+thislist.append('pear')  # To add an item to the end of the list, use the append() method
+print(thislist)
+# Extend List
+fruitlist = ['watermelon', 'raspberry']
+print(fruitlist)
+thislist.extend(fruitlist)  # To append elements from another list to the current list, use the extend() method.
+print(thislist)
+thistuple = ("avacado", "cherry")
+thislist.extend(thistuple)  # The extend() method does not have to append lists, you can add any iterable object (tuples, sets, dictionaries etc.).
+print(thislist)
+thislist.remove("avacado")  # The remove() method removes the specified item.
+print(thislist)
+thislist.pop(2)  # The pop() method removes the specified index.
+print(thislist)
+thislist.pop()  # If you do not specify the index, the pop() method removes the last item.
+print(thislist)
+del thislist[0]  # The del keyword also removes the specified index.
+print(thislist)
+# del fruitlist # The del keyword can also delete the list completely.
+print(fruitlist)
+fruitlist.clear()
+print(fruitlist)
