@@ -1,5 +1,5 @@
 # Assignment 1
-# Define variables
+# DEFINE VARIABLES
 myvar = "Hello"
 my_var = "Hello"
 _my_var = "Hello"
@@ -17,7 +17,11 @@ my var = "Hello"
 # 1. List append() Method -  The append() method adds a single element to the end of the list.
 L1 = ['cashew', 'almond', 'raisins']
 L2 = ['black raisins', 'dates']
-L1.append(L2)
+L1.append(L2)  # append list element
+print(L1)
+L1.append('Hello')  # append string element
+print(L1)
+L1.append(100)  # append number element
 print(L1)
 
 # 2. List clear() Method
@@ -69,9 +73,9 @@ print(x)
 
 # 7.List insert() Method
 L7 = ['Jay', 'suresh', 100]
-L7.insert(0, 'Ajay')
+L7.insert(0, 'Ajay')  # insert string element
 print(L7)
-L7.insert(2, 200)
+L7.insert(2, 200)  # insert number element
 print(L7)
 
 # 8. List pop() Method
@@ -113,14 +117,94 @@ def myfunc(e):
 
 
 L11 = ['Ford', 'Mitsubishi', 'BMW', 'VW', "hello"]
-L11.sort(key=myfunc) #Pass function as a key parameter
+L11.sort(key=myfunc)
 print(L11)
 L12 = ['a', 'abc', 'abcd', 'ab']
 L12.sort(key=myfunc)
 print(L12)
 
+# BASIC OPERATIONS ON OPERATORS
+# Arithmetic Operators
+a = 10
+b = 5
+# addition
+print('Sum: ', a + b)
+# subtraction
+print('Subtraction: ', a - b)
+# multiplication
+print('Multiplication: ', a * b)
+# division
+print('Division: ', a / b)
+# floor division
+print('Floor Division: ', a // b)
+# modulo
+print('Modulo: ', a % b)
+# a to the power b
+print('Power: ', a ** b)
 
 
+# Comparison Operators
+a = 9
+b = 10
+# Equal
+print("a == b : ", a == b)
+# Not Equal
+print("a != b : ", a != b)
+# Greater Than
+print("a > b : ", a > b)
+# Less Than
+print("a < b : ", a < b)
+# Greater Than or Equal to
+print("a >= b : ", a >= b)
+# Less Than or Equal to
+print("a <= b : ", a <= b)
+
+# Logical Operators
+# logical AND
+print(True and True)     # True
+print(True and False)    # False
+# logical OR
+print(True or False)     # True
+# logical NOT
+print(not True)         # False
+
+# Identity Operators
+x = 10
+y = 5
+if x is y:
+    print("x and y are the same object")
+else:
+    print("x and y are not the same object")
+
+# Membership Operators
+fruits = ["apple", "banana", "cherry"]
+if "banana" in fruits:
+    print("Yes, banana is a fruit!")
+else:
+    print("No, banana is not a fruit!")
+
+
+# Bitwise Operator
+a = 0
+b = 1
+# Binary AND
+c = a & b
+print ("a & b : ", c)
+# Binary OR
+c = a | b
+print ("a | b : ", c)
+# Binary XOR
+c = a ^ b
+print ("a ^ b : ", c)
+# Binary Ones Complement
+c = ~a
+print ("~a : ", c)
+# Binary Left Shift
+c = a << 2
+print ("a << 2 : ", c)
+# Binary Right Shift
+c = a >> 2
+print ("a >> 2 : ", c)
 
 
 
