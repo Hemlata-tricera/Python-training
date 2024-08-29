@@ -67,8 +67,15 @@ print(s6)
 s6 = s4 + " " + s5  # To add a space between them, add a " "
 print(s6)
 
+# Format - Strings
+age = 31
+txt = f"Hello, I am {age} year old"  # Placeholder contains variable
+print(txt)
 
+price = 57
+txt = f"The price is {price:.2f} dollars"  # here placeholder include a modifier to format the value.
+print(txt)
 
-
-
+txt = f"The price is {10 * 20} dollars"  # Here placeholder contain math python code(math operation)
+print(txt)
 
