@@ -59,6 +59,13 @@ s3 = "Hello world"
 print(s3.replace("H", "J"))
 print(s3.split(","))  # Split String
 
+# String Concatenation
+s4 = "Good"
+s5 = "Morning"
+s6 = s4 + s5
+print(s6)
+s6 = s4 + " " + s5  # To add a space between them, add a " "
+print(s6)
 
 
 
