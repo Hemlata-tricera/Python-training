@@ -90,9 +90,9 @@ print(L8)
 L9 = [100, 'apple', 'banana', 'cherry',['hello', 'hi'], 100]
 L9.remove(100)  # Remove the number element of the L9 list
 print(L9)
-L9.remove(['hello', 'hi']) # Remove the list element of the L9 list
+L9.remove(['hello', 'hi'])  # Remove the list element of the L9 list
 print(L9)
-L9.remove('cherry') # Remove the string element of the L9 list
+L9.remove('cherry')  # Remove the string element of the L9 list
 print(L9)
 
 # 10.List reverse() Method
