@@ -40,5 +40,8 @@ b = "Hello, World!"
 print(b[:5])  # Slice From the Start
 print(b[2:])  # Slice From the END
 
+b = "Hello, World!"
+print(b[-5:-2]) # Negative indexing
+
 
 
