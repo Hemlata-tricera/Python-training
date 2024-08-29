@@ -43,5 +43,25 @@ print(b[2:])  # Slice From the END
 b = "Hello, World!"
 print(b[-5:-2]) # Negative indexing
 
+#     MODIFY STRING
+s1 = "hemlata"
+print(s1.upper())
+
+print(s1.lower())
+
+# Remove Whitespace
+s2 = " Hemlata  "
+print(s2)
+print(s2.strip())
+
+# Replace String
+s3 = "Hello world"
+print(s3.replace("H", "J"))
+print(s3.split(","))  # Split String
+
+
+
+
+
 
 
