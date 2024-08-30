@@ -2,7 +2,7 @@
 a = "Hello"   # Assign String to a Variable
 print(a)
 
-#Multiline Strings
+# Multiline Strings
 a = """Twinkle Twinkle, Little Star
 How I wonder what you are
 Up above the world so high
@@ -182,4 +182,148 @@ print(txt.expandtabs(10))
 txt = "Hello, welcome to my world."
 x = txt.find("welcome")
 print(x)
+
+
+
+# ************************************ASSIGNMENT******************************************************************
+# STRING FORMATTING
+# To specify a string as an f-string, simply put an f in front of the string literal,
+# and add curly brackets {} as placeholders for variables and other operations.
+
+name = "Hemlata"
+S1 = f"My name is { name }."  # Placeholder contains variable(variable contain string)
+print(S1)
+
+current_age = 31
+txt = f"Hello, I am {current_age} year old"  # Placeholder contains variable
+print(txt)
+
+product_price = 50
+txt = f"The price is {product_price:.2f} dollars"  # here placeholder include a modifier to format the value.
+print(txt)
+
+price = 49
+txt = f"It is very {'Expensive' if price > 50 else 'Cheap'}" # Here placeholder contain math python code(math operation)
+print(txt)
+
+
+# STRING OPERATIONS
+# 1. Changing Case
+# upper(): Converts all characters to uppercase.
+text = "Hello World"
+print("upper() method converts all characters to uppercase.", text.upper())
+
+# lower(): Converts all characters to lowercase.
+print("lower(): Converts all characters to lowercase.", text.lower())
+
+# capitalize(): Capitalizes the first character of the string.
+print("capitalize(): Capitalizes the first character of the string.", text.capitalize())
+
+# title(): Capitalizes the first character of each word in the string.
+print("title(): Capitalizes the first character of each word in the string.", text.title())
+
+# swapcase(): Swaps the case of all characters.
+print("swapcase(): Swaps the case of all characters.", text.swapcase())
+
+# casefold(): Converts the string to lowercase and is more aggressive than lower() for case-insensitive comparisons.
+print("casefold(): Converts the string to lowercase and is more aggressive than lower() for case-insensitive comparisons.", text.casefold())
+
+
+# 2.Whitespace Management
+# strip(): Removes leading(beginning) and trailing (end) whitespace.
+S = "   banana   "
+X = S.strip()
+print("of all fruits", X, "is my favorite")
+# strip(chars): Removes leading and trailing characters specified in chars.
+S1 = ",,,,,rrttgg.....banana....rrr"
+x = S1.strip(",.grt")
+print(x)
+
+# lstrip(): Removes leading whitespace.
+print("lstrip(): Removes leading whitespace.", S.lstrip())
+
+#lstrip(chars): Removes leading characters specified in chars.
+S1 = ",,,,,rrttgg.....banana....rrr"
+print("lstrip(chars): Removes leading characters specified in chars", S1.lstrip(".,tgr"))
+
+#rstrip(): Removes trailing whitespace.
+print("rstrip(): Removes trailing whitespace.", S.rstrip())
+
+# rstrip(chars): Removes trailing characters specified in chars.
+print("rstrip(chars): Removes trailing characters specified in chars.", S1.rstrip(".r"))
+
+# 3. Padding and Alignment:
+S2 = "Hello"
+# ljust(width, fillchar): Left-justifies the string in a field of the given width, padding with fillchar.
+print("ljust(20, '*'):", S2.ljust(20, '*'))
+print("ljust(20):", S2.ljust(20))  # A character to fill the missing space (to the right of the string). Default is " " (space).
+
+# rjust(width, fillchar): Right-justifies the string in a field of the given width, padding with fillchar.
+print("rjust(20, '*'):", S2.rjust(20, '*'))
+print("rjust(20):", S2.rjust(20))  # A character to fill the missing space (to the left of the string). Default is " " (space).
+
+# center(width, fillchar): Centers the string in a field of the given width, padding with fillchar.
+print("center(20, '*'):", S2.center(20, '*'))
+print("center(20):", S2.center(20))  # Default parameter is space
+
+# zfill(width): Pads the string with zeros on the left, ensuring the string is at least width characters long.
+print("zfill(20):", S2.zfill(20))
+
+
+# 4.Searching
+S3 = "This is Python tutorial"
+# find(substring): Returns the lowest index where substring is found. Returns -1 if not found.
+print("find('python')", S3.find("Python"))
+# string.find(value, start, end): start(default is 0) and end(Default is to the end of the string) parameter are optional
+print("find('i')", S3.find("i", 3,7))  # find with parameter
+
+# rfind(substring): Returns the highest index where substring is found. Returns -1 if not found.
+print("rfind('o')", S3.rfind("o"))
+print("rfind('i')", S3.rfind("i", 1, 10))  # rfind with parameter[string.rfind(value, start, end)]
+
+# index(substring): Like find(), but raises ValueError if substring is not found.
+print("index('python')", S3.index("Python"))
+print("index('i')", S3.index("i", 1, 10)) # index with parameter[string.index(value, start, end)]
+
+# rindex(substring): Like rfind(), but raises ValueError if substring is not found.
+print("rindex('i')", S3.rindex("i"))
+
+# startswith(prefix): Checks if the string starts with prefix.
+print('startwith("This")', S3.startswith("This"))
+print('startwith("Python", 8, 15)', S3.startswith("Python", 8, 15)) # Startswith with parameter
+
+# endswith(suffix): Checks if the string ends with suffix.
+print('endswith("tutorial")', S3.endswith("tutorial"))
+print('endswith("tutorial", 15, 25)', S3.endswith("tutorial", 15, 25))  # endswith with parameter
+
+
+# 5. Replacing
+S3 = "This is Python tutorial"
+# replace(old, new): Replaces all occurrences of old with new.
+print("replace('tutorial', 'Learning')", S3.replace("tutorial", "Learning") )
+# replace(old, new, count): Replaces up to count occurrences of old with new.
+print("replace('i', 'I', 2)", S3.replace("i", "I", 2) )  # with parameter
+
+# 6. Splitting
+S5 = "apple#banana#cherry#orange"
+
+# split(sep, maxsplit): Splits the string into a list using sep as the delimiter, splitting at most maxsplit times.
+print("split():", S5.split("#"))
+print("split():", S5.split("#", 2)) # with parameter
+
+# rsplit(sep, maxsplit): Splits from the end of the string.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
