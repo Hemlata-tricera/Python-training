@@ -183,6 +183,8 @@ txt = "Hello, welcome to my world."
 x = txt.find("welcome")
 print(x)
 
+
+
 # ************************************ASSIGNMENT******************************************************************
 # STRING FORMATTING
 # To specify a string as an f-string, simply put an f in front of the string literal,
@@ -203,3 +205,28 @@ print(txt)
 price = 49
 txt = f"It is very {'Expensive' if price > 50 else 'Cheap'}" # Here placeholder contain math python code(math operation)
 print(txt)
+
+
+# STRING OPERATIONS
+# 1. Changing Case
+# upper(): Converts all characters to uppercase.
+text = "Hello World"
+print("upper() method converts all characters to uppercase.", text.upper())
+
+# lower(): Converts all characters to lowercase.
+print("lower(): Converts all characters to lowercase.", text.lower())
+
+# capitalize(): Capitalizes the first character of the string.
+print("capitalize(): Capitalizes the first character of the string.", text.capitalize())
+
+# title(): Capitalizes the first character of each word in the string.
+print("title(): Capitalizes the first character of each word in the string.", text.title())
+
+# swapcase(): Swaps the case of all characters.
+print("swapcase(): Swaps the case of all characters.", text.swapcase())
+
+#casefold(): Converts the string to lowercase and is more aggressive than lower() for case-insensitive comparisons.
+print("casefold(): Converts the string to lowercase and is more aggressive than lower() for case-insensitive comparisons.", text.casefold())
+
+
+
