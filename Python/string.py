@@ -2,7 +2,7 @@
 a = "Hello"   # Assign String to a Variable
 print(a)
 
-#Multiline Strings
+# Multiline Strings
 a = """Twinkle Twinkle, Little Star
 How I wonder what you are
 Up above the world so high
@@ -183,3 +183,23 @@ txt = "Hello, welcome to my world."
 x = txt.find("welcome")
 print(x)
 
+# ************************************ASSIGNMENT******************************************************************
+# STRING FORMATTING
+# To specify a string as an f-string, simply put an f in front of the string literal,
+# and add curly brackets {} as placeholders for variables and other operations.
+
+name = "Hemlata"
+S1 = f"My name is { name }."  # Placeholder contains variable(variable contain string)
+print(S1)
+
+current_age = 31
+txt = f"Hello, I am {current_age} year old"  # Placeholder contains variable
+print(txt)
+
+product_price = 50
+txt = f"The price is {product_price:.2f} dollars"  # here placeholder include a modifier to format the value.
+print(txt)
+
+price = 49
+txt = f"It is very {'Expensive' if price > 50 else 'Cheap'}" # Here placeholder contain math python code(math operation)
+print(txt)
