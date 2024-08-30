@@ -304,6 +304,15 @@ print("replace('tutorial', 'Learning')", S3.replace("tutorial", "Learning") )
 # replace(old, new, count): Replaces up to count occurrences of old with new.
 print("replace('i', 'I', 2)", S3.replace("i", "I", 2) )  # with parameter
 
+# 6. Splitting
+S5 = "apple#banana#cherry#orange"
+
+# split(sep, maxsplit): Splits the string into a list using sep as the delimiter, splitting at most maxsplit times.
+print("split():", S5.split("#"))
+print("split():", S5.split("#", 2)) # with parameter
+
+# rsplit(sep, maxsplit): Splits from the end of the string.
+
 
 
 
