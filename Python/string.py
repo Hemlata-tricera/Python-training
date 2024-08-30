@@ -225,8 +225,41 @@ print("title(): Capitalizes the first character of each word in the string.", te
 # swapcase(): Swaps the case of all characters.
 print("swapcase(): Swaps the case of all characters.", text.swapcase())
 
-#casefold(): Converts the string to lowercase and is more aggressive than lower() for case-insensitive comparisons.
+# casefold(): Converts the string to lowercase and is more aggressive than lower() for case-insensitive comparisons.
 print("casefold(): Converts the string to lowercase and is more aggressive than lower() for case-insensitive comparisons.", text.casefold())
+
+
+# 2.Whitespace Management
+# strip(): Removes leading(beginning) and trailing (end) whitespace.
+S = "   banana   "
+X = S.strip()
+print("of all fruits", X, "is my favorite")
+# strip(chars): Removes leading and trailing characters specified in chars.
+S1 = ",,,,,rrttgg.....banana....rrr"
+x = S1.strip(",.grt")
+print(x)
+
+# lstrip(): Removes leading whitespace.
+print("lstrip(): Removes leading whitespace.", S.lstrip())
+
+#lstrip(chars): Removes leading characters specified in chars.
+S1 = ",,,,,rrttgg.....banana....rrr"
+print("lstrip(chars): Removes leading characters specified in chars", S1.lstrip(".,tgr"))
+
+#rstrip(): Removes trailing whitespace.
+print("rstrip(): Removes trailing whitespace.", S.rstrip())
+
+# rstrip(chars): Removes trailing characters specified in chars.
+print("rstrip(chars): Removes trailing characters specified in chars.", S1.rstrip(".r"))
+
+
+
+
+
+
+
+
+
 
 
 
