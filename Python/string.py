@@ -270,6 +270,39 @@ print("center(20):", S2.center(20))  # Default parameter is space
 print("zfill(20):", S2.zfill(20))
 
 
+# 4.Searching
+S3 = "This is Python tutorial"
+# find(substring): Returns the lowest index where substring is found. Returns -1 if not found.
+print("find('python')", S3.find("Python"))
+# string.find(value, start, end): start(default is 0) and end(Default is to the end of the string) parameter are optional
+print("find('i')", S3.find("i", 3,7))  # find with parameter
+
+# rfind(substring): Returns the highest index where substring is found. Returns -1 if not found.
+print("rfind('o')", S3.rfind("o"))
+print("rfind('i')", S3.rfind("i", 1, 10))  # rfind with parameter[string.rfind(value, start, end)]
+
+# index(substring): Like find(), but raises ValueError if substring is not found.
+print("index('python')", S3.index("Python"))
+print("index('i')", S3.index("i", 1, 10)) # index with parameter[string.index(value, start, end)]
+
+# rindex(substring): Like rfind(), but raises ValueError if substring is not found.
+print("rindex('i')", S3.rindex("i"))
+
+# startswith(prefix): Checks if the string starts with prefix.
+print('startwith("This")', S3.startswith("This"))
+print('startwith("Python", 8, 15)', S3.startswith("Python", 8, 15)) # Startswith with parameter
+
+
+# endswith(suffix): Checks if the string ends with suffix.
+print('endswith("tutorial")', S3.endswith("tutorial"))
+print('endswith("tutorial", 15, 25)', S3.endswith("tutorial", 15, 25))  # endswith with parameter
+
+
+
+
+
+
+
 
 
 
