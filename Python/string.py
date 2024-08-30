@@ -292,10 +292,18 @@ print("rindex('i')", S3.rindex("i"))
 print('startwith("This")', S3.startswith("This"))
 print('startwith("Python", 8, 15)', S3.startswith("Python", 8, 15)) # Startswith with parameter
 
-
 # endswith(suffix): Checks if the string ends with suffix.
 print('endswith("tutorial")', S3.endswith("tutorial"))
 print('endswith("tutorial", 15, 25)', S3.endswith("tutorial", 15, 25))  # endswith with parameter
+
+
+# 5. Replacing
+S3 = "This is Python tutorial"
+# replace(old, new): Replaces all occurrences of old with new.
+print("replace('tutorial', 'Learning')", S3.replace("tutorial", "Learning") )
+# replace(old, new, count): Replaces up to count occurrences of old with new.
+print("replace('i', 'I', 2)", S3.replace("i", "I", 2) )  # with parameter
+
 
 
 
