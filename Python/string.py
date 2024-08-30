@@ -252,8 +252,22 @@ print("rstrip(): Removes trailing whitespace.", S.rstrip())
 # rstrip(chars): Removes trailing characters specified in chars.
 print("rstrip(chars): Removes trailing characters specified in chars.", S1.rstrip(".r"))
 
+# 3. Padding and Alignment:
+S2 = "Hello"
+# ljust(width, fillchar): Left-justifies the string in a field of the given width, padding with fillchar.
+print("ljust(20, '*'):", S2.ljust(20, '*'))
+print("ljust(20):", S2.ljust(20))  # A character to fill the missing space (to the right of the string). Default is " " (space).
 
+# rjust(width, fillchar): Right-justifies the string in a field of the given width, padding with fillchar.
+print("rjust(20, '*'):", S2.rjust(20, '*'))
+print("rjust(20):", S2.rjust(20))  # A character to fill the missing space (to the left of the string). Default is " " (space).
 
+# center(width, fillchar): Centers the string in a field of the given width, padding with fillchar.
+print("center(20, '*'):", S2.center(20, '*'))
+print("center(20):", S2.center(20))  # Default parameter is space
+
+# zfill(width): Pads the string with zeros on the left, ensuring the string is at least width characters long.
+print("zfill(20):", S2.zfill(20))
 
 
 
