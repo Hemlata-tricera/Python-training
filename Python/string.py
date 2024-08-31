@@ -312,6 +312,28 @@ print("split():", S5.split("#"))
 print("split():", S5.split("#", 2)) # with parameter
 
 # rsplit(sep, maxsplit): Splits from the end of the string.
+print("rsplit():", S5.rsplit("#"))
+print("rsplit():", S5.rsplit("#", 2)) # with parameter
+
+# splitlines(keepends): Splits the string at line boundaries.
+print("splitlines():", S5.splitlines())
+print("splitlines(True):", S5.splitlines(True))
+
+# 7.Joining
+# join(iterable): Joins elements of iterable (a list, tuple, etc.) into a single string, using the string as a separator.
+myTuple = ("Jay", "Jaya", "Jayesh")
+x = '#'.join(myTuple)
+print(x)
+
+myDict = {'name': 'Hema', 'city': 'pune'}  # When using a dictionary as an iterable, the returned values are the keys, not the values.
+x = "TEST".join(myDict)
+print(x)
+
+myList = ['Jay', 'Jayesh', 'Jaya'] # with list parameter
+x = "&".join(myList)
+print(x)
+
+
 
 
 
