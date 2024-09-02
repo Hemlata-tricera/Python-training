@@ -312,12 +312,179 @@ print("split():", S5.split("#"))
 print("split():", S5.split("#", 2)) # with parameter
 
 # rsplit(sep, maxsplit): Splits from the end of the string.
+print("rsplit():", S5.rsplit("#"))
+print("rsplit():", S5.rsplit("#", 2)) # with parameter
+
+# splitlines(keepends): Splits the string at line boundaries.
+print("splitlines():", S5.splitlines())
+print("splitlines(True):", S5.splitlines(True))
+
+# 7.Joining
+# join(iterable): Joins elements of iterable (a list, tuple, etc.) into a single string, using the string as a separator.
+myTuple = ("Jay", "Jaya", "Jayesh")
+x = '#'.join(myTuple)
+print(x)
+
+myDict = {'name': 'Hema', 'city': 'pune'}  # When using a dictionary as an iterable, the returned values are the keys, not the values.
+x = "TEST".join(myDict)
+print(x)
+
+myList = ['Jay', 'Jayesh', 'Jaya'] # with list parameter
+x = "&".join(myList)
+print(x)
+
+
+# 8.Character Checks / Checking
+
+# isdigit(): Checks if all characters are digits.
+S6 = "50800"
+x = S6.isdigit()
+print(x)
+# Example-2
+a = "\u0030" #unicode for 0
+b = "\u00B2" #unicode for ²
+print(a.isdigit())
+print(b.isdigit())
+
+# isalpha(): Checks if all characters are alphabetic.
+txt = "Company10"
+x = txt.isalpha()
+print(x)
+
+# isalnum(): Checks if all characters are alphanumeric(meaning alphabet letter (a-z) and numbers (0-9))
+txt = "Company10"
+x = txt.isalnum()
+print(x)
+
+# isspace(): Checks if all characters are whitespace otherwise return false.
+#Example 1
+txt = "   "
+x = txt.isspace()
+print(x)
+#Example 2
+txt = "    s  "
+x = txt.isspace()
+print(x)
+
+# istitle(): Checks if the string is in title case.
+a = "HELLO, AND WELCOME TO MY WORLD"
+b = "Hello"
+c = "22 Names"
+d = "This Is %'!?"
+
+print("a.istitle()", a.istitle())
+print("b.istitle()",b.istitle())
+print("c.istitle()",c.istitle())
+print("d.istitle()",d.istitle())
+
+# isupper(): Checks if all characters are uppercase.
+a = "Hello World!"
+b = "hello 123"
+c = "MY NAME IS PETER"
+
+print("a.issupper",a.isupper())
+print("b.issupper",b.isupper())
+print("c.issupper",c.isupper())
+
+# islower(): Checks if all characters are lowercase.
+a = "Hello world!"
+b = "hello 123"
+c = "mynameisPeter"
+
+print("a.islower()",a.islower())
+print("a.islower()",b.islower())
+print("a.islower()",c.islower())
+
+# A string is considered a valid identifier if it only contains alphanumeric letters (a-z) and (0-9),
+# or underscores (_). A valid identifier cannot start with a number, or contain any spaces.
+a = "MyFolder"
+b = "Demo002"
+c = "2bring"
+d = "my demo"
+
+print(a.isidentifier())
+print(b.isidentifier())
+print(c.isidentifier())
+print(d.isidentifier())
+
+# The isprintable() method returns True if all the characters are printable, otherwise False.
+txt = "Hello! Are you #1?"
+x = txt.isprintable()
+print(x)
+# Example 2
+# Example of none printable character can be carriage return and line feed.
+txt = "Hello!\nAre you #1?"
+x = txt.isprintable()
+print(x)
+
+# The maketrans() method returns a mapping table that can be used with the translate() method to replace specified characters.
+# Create a mapping table, and use it in the translate() method to replace any "S" characters with a "P" character:
+txt = "Hello Sam!"
+mytable = str.maketrans("S", "P")
+print(txt.translate(mytable))
+#Use a mapping table to replace many characters
+txt = "Hi Sam!"
+x = "mSa"
+y = "eJo"
+mytable = str.maketrans(x, y)
+print(txt.translate(mytable))
+#The third parameter in the mapping table describes characters that you want to remove from the string
+txt = "Good night Sam!"
+x = "mSa"
+y = "eJo"
+z = "odnght"
+mytable = str.maketrans(x, y, z)
+print(txt.translate(mytable))
 
 
 
 
+# 9.Miscellaneous:
+# format(): Formats the string using placeholders.
+# named indexes:
+txt1 = "My name is {fname}, I'm {age}".format(fname = "John", age = 36)
+# numbered indexes:
+txt2 = "My name is {0}, I'm {1}".format("John",36)
+# empty placeholders:
+txt3 = "My name is {}, I'm {}".format("John",36)
+
+print(txt1)
+print(txt2)
+print(txt3)
+
+# partition(separator): Splits the string at the first occurrence of separator into a 3-tuple element.
+txt = "I could eat bananas all day"
+x = txt.partition("bananas") # Search for the word "bananas", and return a tuple with three elements:
+# 1 - everything before the "match"
+# 2 - the "match"
+# 3 - everything after the "match"
+print(x)
+
+# Example 2
+# If the specified value is not found, the partition() method returns a tuple containing:
+# 1 - the whole string, 2 - an empty string, 3 - an empty string:
+
+txt = "I could eat bananas all day"
+x = txt.partition("apples")
+print(x)
 
 
+# rpartition(separator): Splits the string at the last occurrence of separator into a 3-tuple.
+
+txt = "I could eat bananas all day"
+x = txt.rpartition("bananas") # Search for the word "bananas", and return a tuple with three elements:
+# 1 - everything before the "match"
+# 2 - the "match"
+# 3 - everything after the "match"
+print(x)
+
+# expandtabs(tabsize): Expands tabs in the string to spaces, using tabsize spaces per tab.
+txt = "H\te\tl\tl\to"
+print(txt)
+print(txt.expandtabs())  # Default tabsize is 8
+print(txt.expandtabs(2))
+print(txt.expandtabs(4))
+print(txt.expandtabs(10))
 
 
 
