@@ -5,8 +5,7 @@ b = 20
 if b > a:
     print("b is greater than a")
 
-# Elif
-# The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
+# Elif-The elif keyword is Python's way of saying "if the previous conditions were not true, then try this condition".
 a = 10
 b = 10
 
@@ -15,10 +14,7 @@ if b > a:
 elif a == b:
     print("a and b  are equal")
 
-# Else
-# The else keyword catches anything which isn't caught by the preceding conditions.
-
-
+# Else - The else keyword catches anything which isn't caught by the preceding conditions.
 a = 200
 b = 30
 
@@ -29,8 +25,7 @@ elif a == b:
 else:
     print("a is greater than b")
 
-# Short Hand If
-# If you have only one statement to execute, you can put it on the same line as the if statement.
+# Short Hand If - If you have only one statement to execute, you can put it on the same line as the if statement.
 if a > b: print("a is greater than b")  # One line if statement:
 
 # Short Hand If ... Else
@@ -108,5 +103,6 @@ while i < 6:
     print(i)
     i += 1
 else:
-    print("i is no longer leass than 6")  # Print a message once the condition is false:
+    print("i is no longer leas than 6")  # Print a message once the condition is false:
+
 
