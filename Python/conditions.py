@@ -178,6 +178,13 @@ for x in range(3):
         print(x, end=" ")
     print()
 
-
+# Example 2- Pattern for rectangle
+rows = int(input("Enter the value of rows"))
+columns = int(input("Enter the value of columns"))
+symbol = input("Enter the symbol")
+for x in range(rows):
+    for y in range(columns):
+        print(symbol, end="")
+    print()
 
 
