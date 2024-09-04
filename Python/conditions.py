@@ -169,3 +169,38 @@ for x in [0, 1, 2]:
   pass
 
 
+# -------------------------------------ASSIGNMENT---------------------------------------------------------------------
+
+# Example 1
+for x in range(3):
+
+    for i in range(0, 10):
+        print(x, end=" ")
+    print()
+
+# Example 2- Pattern for rectangle
+rows = int(input("Enter the value of rows"))
+columns = int(input("Enter the value of columns"))
+symbol = input("Enter the symbol")
+for x in range(rows):
+    for y in range(columns):
+        print(symbol, end="")
+    print()
+
+
+# Truthy and Falsy Values in Python-
+# Falsy Values: These are values that evaluate to False in a Boolean context. The most common falsy values are:
+# None,False ,0 (zero in any numeric type),0.0 (zero in floating-point type),[] (empty list),{} (empty dictionary),() (empty tuple),'' (empty string)
+# Truthy Values: Any value that is not falsy is considered truthy. This includes:
+# Non-zero numbers (e.g., 1, 3.14)
+# Non-empty strings (e.g., 'hello')
+# Non-empty lists (e.g., [1, 2, 3])
+# Non-empty dictionaries (e.g., {'key': 'value'})
+# Non-empty tuples (e.g., (1, 2))
+values = [None, False, 0, 0.0, "hello", 1, 3.14, (1, 2), [1, 2, 3], {'name': "XYZ"}, [], {}, (), '']
+for val in values:
+    if val:
+        print(f"value: { val } is truthy")
+    else:
+        print(f"value: { val } is falsy")
+
