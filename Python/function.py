@@ -11,3 +11,12 @@ def my_function():
   print("Hello from a function")
 
 my_function()
+
+# Arguments
+def full_name(fname):
+  print(f"Fullname of { fname } is { fname } Pawar")
+
+full_name("Jayesh")
+full_name("Suresh")
+full_name("Mangesh")
+
