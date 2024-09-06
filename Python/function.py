@@ -65,3 +65,29 @@ my_function("Brazil")
 # function definitions cannot be empty, but if you for some reason have a function definition with no content, put in the pass statement to avoid getting an error.
 def myfunction():
   pass
+
+
+# Passing a List as an Argument
+def my_function(food):
+  for x in food:
+    print(x)
+
+fruits = [ 'apple', 'papaya', 'orange' ]
+my_function(fruits)
+
+dry_fruits = ('raisins', 'alomonds', 'cashew')
+my_function(dry_fruits)
+
+dinner = { 'starter' : 'Chiken tikka', 'main_menu' : 'curry & roti', 'dissert' : 'Kaju_gulkand'}
+my_function(dinner)
+my_function(dinner.values())
+
+
+# Return Values
+def my_function(x):
+  return 5 * x
+
+
+print(my_function(10))
+print(my_function(20))
+print(my_function(7))
