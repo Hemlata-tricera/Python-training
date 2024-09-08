@@ -41,6 +41,17 @@ p1.age = 40
 print(p1.age)
 
 # Delete Object Properties - You can delete properties on objects by using the del keyword
-del p1.age
-print(p1.age)
+# del p1.age
+# print(p1.age)
+
+# Delete Objects - You can delete objects by using the del keyword
+# del p1
+# print(p1)
+
+# The pass Statement
+
+class Person:
+    pass
+
+
 
