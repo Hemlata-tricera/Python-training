@@ -40,3 +40,7 @@ p1.myfun()
 p1.age = 40
 print(p1.age)
 
+# Delete Object Properties - You can delete properties on objects by using the del keyword
+del p1.age
+print(p1.age)
+
