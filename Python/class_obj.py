@@ -36,3 +36,7 @@ p1 = Person("avinash", 35)
 p1.myfun()
 
 
+# Modify Object Properties
+p1.age = 40
+print(p1.age)
+
