@@ -8,12 +8,18 @@ class Person:
     def printname(self):
         print(self.firstname, self.lastname)
 
-x = Person("Hemlata", "Raghuvanshi")
-x.printname()
+# x = Person("Hemlata", "Raghuvanshi")
+# x.printname()
 
 
 class Student(Person):
-    pass
+    def __init__(self, name, lname, year):
+        super().__init__(name, lname)
+        self.graduationyear = year
 
-y = Student("Hema", "Raghuvanshi")
-y.printname()
+    def welcome(self):
+        print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+
+
+y = Student("Hema", "Raghuvanshi", 2024)
+y.welcome()
