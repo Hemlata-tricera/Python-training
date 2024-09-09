@@ -23,3 +23,29 @@ class Student(Person):
 
 y = Student("Hema", "Raghuvanshi", 2024)
 y.welcome()
+
+
+# Why Method Overloading Not support in Python-
+# We may define many methods of the same name and different arguments,
+# but we can only use the latest defined method. Calling the other method will produce an error.
+
+# First product method - Takes two argument and print their product
+def product(a, b):
+    p = a * b
+    print(p)
+
+# Second product method
+# Takes three argument and print their product
+
+
+def product(a, b, c):
+    p = a * b*c
+    print(p)
+
+# Uncommenting the below line shows an error
+# product(4, 5)
+
+
+# This line will call the second product method
+product(4, 5, 5)
+
