@@ -75,3 +75,39 @@ s1 = Son()
 s1.fathername = "Ajay"
 s1.mothername = "Anjali"
 s1.parents()
+
+
+# Multilevel inheritance
+
+class Grandfather:
+    def __init__(self, gfathername):
+        self.gfathername = gfathername
+
+
+class Father(Grandfather):
+    def __init__(self, fathername, gfathername):
+        self.fathername = fathername
+
+        # invoking constructor of Grandfather class
+        Grandfather.__init__(self, gfathername)
+
+
+class Son(Father):
+    def __init__(self, sonname, fathername, gfatthername):
+        self.sonname = sonname
+
+        # invoking constructor of Father class
+        Father.__init__(self, fathername, gfatthername)
+
+    def print_name(self):
+        print("Grandfather name:", self.gfathername)
+        print("Father Name:", self.fathername)
+        print("Son Name:", self.sonname)
+
+
+
+s1 = Son("Ajay", "Avinash", "Anil")
+print(s1.gfathername)
+s1.print_name()
+
+
