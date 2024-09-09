@@ -49,3 +49,29 @@ def product(a, b, c):
 # This line will call the second product method
 product(4, 5, 5)
 
+# Types of inheritance
+# Multiple Inheritance
+
+class Mother:
+    mothername = " "
+
+    def mother(self):
+        print(self.mothername)
+
+
+class Father:
+    fathername = " "
+
+    def father(self):
+        print(self.fathername)
+
+
+class Son(Mother, Father):
+    def parents(self):
+        print("Father", self.fathername)
+        print("Mother", self.mothername)
+
+s1 = Son()
+s1.fathername = "Ajay"
+s1.mothername = "Anjali"
+s1.parents()
