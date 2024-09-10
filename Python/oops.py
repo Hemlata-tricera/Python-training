@@ -111,3 +111,32 @@ print(s1.gfathername)
 s1.print_name()
 
 
+# ENCAPSULATION-
+
+class student:
+    def __init__(self, name, age):
+        self.name = name
+        self.__age = age
+
+    def get_age(self):
+        return self.__age
+
+    def set_age(self, age):
+        self.__age = age
+
+    def test(self):
+        return "hello"
+
+
+class student1(student):
+    def __init__(self, rn, name, age):
+        self.rn = rn
+        super().__init__(name, age)
+
+    def test(self):
+        return "Hello World"
+
+
+std2 = student("Hema", 31)
+print(std2.name)
+print(std2.test())
