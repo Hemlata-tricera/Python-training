@@ -59,3 +59,42 @@ print(thisdict)
 # The clear() method empties the dictionary
 thisdict.clear()
 print(thisdict)
+
+
+# Loop Through a Dictionary
+dict1 =	{
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+for x in dict1:
+    print(x)
+
+# Print all values in the dictionary, one by one
+for x in dict1:
+    print(dict1[x])
+
+# You can also use the values() method to return values of a dictionary
+for x in dict1.values():
+    print(x)
+
+# You can use the keys() method to return the keys of a dictionary
+for x in dict1.keys():
+    print(x)
+
+# Loop through both keys and values, by using the items() method
+for x, y in dict1.items():
+    print(x, y)
+
+# Copy a Dictionary
+
+dictA = {"name": "Asma", "age": 34}
+
+dictB = dictA.copy()
+print(dictB)
+
+# Another way to make a copy is to use the built-in function dict().
+dictC = dict(dictB)
+print(dictC)
+
