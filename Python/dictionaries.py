@@ -98,3 +98,37 @@ print(dictB)
 dictC = dict(dictB)
 print(dictC)
 
+# Python - Nested Dictionaries
+myfamily = {
+    "Child1": {
+        "name": "Amar",
+        "age": 18
+    },
+    "Child2": {
+        "name": "Akbar",
+        "age": 20
+    },
+    "Child3": {
+        "name": "Anthony",
+        "age": 22
+    }
+}
+
+print(myfamily)
+
+dictD= {
+    "Dict1": dictA,
+    "Dict2": dictB,
+    "Dict3": dictC
+}
+print(dictD)
+
+# Access Items in Nested Dictionaries
+print(myfamily["Child2"]["name"])
+
+# Loop Through Nested Dictionaries
+for x, obj in myfamily.items():
+    print(x)
+    for y in obj:
+        print(y + ':', obj[y])
+
