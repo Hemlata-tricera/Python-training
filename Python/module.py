@@ -53,8 +53,36 @@ print(x.strftime("%X"))  # Local version of time
 print(x.strftime("%%"))  # Local version of time
 
 
+# Python Math
+# Built-in Math Functions
+# 1. min()
+x = min(5, 10, 25)
+print(x)
+
+#2. max()
+y = max(5, 10, 25)
+print(y)
+
+# 3. The abs() - function returns the absolute (positive) value of the specified number:
+x = abs(-7.25)
+print(x)
+
+# 4. The pow(x, y)- function returns the value of x to the power of y (xy).
+x = pow(4, 3)  # Return the value of 4 to the power of 3 (same as 4 * 4 * 4)
+print(x)
+
+# The Math Module
+import math
+
+x = math.sqrt(64)
+print(x)
+
+x = math.ceil(1.4)
+y = math.floor(1.4)
+
+print(x) # returns 2
+print(y) # returns 1
 
 
-
-
-
+x = math.pi
+print(x)
