@@ -160,3 +160,47 @@ print(new_dict)
 x = new_dict.get("b")
 
 print(x)
+y = new_dict.get("d")  # default value is none
+print(y)
+
+# 5. items()- Returns a view object that displays a list of a dictionary's key-value tuple pairs.
+my_dict = { "a": "apple", "b":"ball"}
+print(my_dict.items())  # o/p- dict_items([('a', 'apple'), ('b', 'ball')])
+
+# 6. keys()-Returns a view object that displays a list of all the keys in the dictionary.
+my_dict = { "a": "apple", "b":"ball", "c": "camel"}
+print(my_dict.keys())
+
+
+# 7. pop(key, default) - Removes the specified key and returns its value. If the key is not found, returns the default value if provided.
+my_dict = { "a": "apple", "b":"ball", "c": "camel"}
+print(my_dict.pop('a'))       # Output: 1
+print(my_dict.pop('d', 'not found'))  # Output: not found
+print(my_dict)
+
+# 8. popitem() -Removes and returns a (key, value) pair from the dictionary. Pairs are returned in LIFO (last-in, first-out) order
+my_dict = {'a': 1, 'b': 2}
+item = my_dict.popitem()
+print(item)  # Output: ('b', 2)
+print(my_dict)  # Output: {'a': 1}
+
+# 9. setdefault(key, default)-Returns the value of a key if it is in the dictionary. If not, inserts the key with a default value and returns that value.
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+x = car.setdefault("color", "white")
+
+print(x)  # o/p- white
+print(car) # o/p- {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'white'}
+
+# 10. update(other) - Updates the dictionary with the key/value pairs from another dictionary or iterable of key/value pairs.
+my_dict = {'a': 1}
+my_dict.update({'b': 2, 'c': 3})
+print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3}
+
+# 11. values()- Returns a view object that displays a list of all the values in the dictionary.
+my_dict = {'a': 1, 'b': 2}
+print(my_dict.values())  # Output: dict_values([1, 2])
