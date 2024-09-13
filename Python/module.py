@@ -86,3 +86,11 @@ print(y) # returns 1
 
 x = math.pi
 print(x)
+
+
+import camelcase
+c = camelcase.CamelCase()
+txt = "Hello world!"
+print(c.hump(txt))  # #This method capitalizes the first letter of each word.
+
+
