@@ -132,3 +132,31 @@ for x, obj in myfamily.items():
     for y in obj:
         print(y + ':', obj[y])
 
+
+# Dictionary Method
+# 1. clear()- Removes all items from the dictionary.
+car = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+
+car.clear()
+print(car)
+
+# 2. dict.copy()-Returns a shallow copy of the dictionary.
+
+my_dict = {'a': 1, 'b': 2}
+new_dict = my_dict.copy()
+print(new_dict)  # Output: {'a': 1, 'b': 2}
+
+# 3. dict.fromkeys(iterable, value=None)- Creates a new dictionary with keys from iterable and values set to value.
+keys = [ 'a', 'b', 'c']
+new_dict = dict.fromkeys(keys, 0)
+print(new_dict)
+
+# 4. dict.get(key, default=None) - Returns the value for key if key is in the dictionary; otherwise, returns default.
+
+x = new_dict.get("b")
+
+print(x)
