@@ -79,3 +79,71 @@ t = ("Hey", "Hi")
 x = ("Hello",)
 t += x
 print(t)
+
+
+# Remove Items
+y = list(t)
+y.remove("Hi")
+t = tuple(y)
+print(t)
+
+tuple_2 = ("Jaya", "Sushma", "Rekha")
+print(tuple_2)
+# del(tuple_2)
+print(tuple_2)
+
+# Python - Unpack Tuples - When we create a tuple, we normally assign values to it. This is called "packing" a tuple
+fruits = ("apple", "banana", "cherry")
+
+(x, y, z) = fruits
+
+print(x)   # o/p - apple
+print(y)  # o/p - banana
+print(z)  # o/p - cherry
+
+# Using Asterisk*
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+(green, yellow, *red) = fruits
+print(green)  # o/p - apple
+print(yellow)  # o/p - banana
+print(red)  # o/p - ['cherry', 'strawberry', 'raspberry']
+
+# Loop Through a Tuple
+tuple_3 = ("a", "b", "c")
+for x in tuple_3:
+    print(x)
+
+# Loop Through the Index Numbers
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+
+# Using a While Loop
+thistuple = ("a", "b", "c")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
+
+# Join Two Tuples
+tup1 = ("a", "b", "c")
+tup2 = (1, 2, 3)
+tup3 = tup1 + tup2
+print(tup3)
+
+# Multiply Tuples
+mytup = tup2 * 3
+print(mytup)
+
+# tuple methods
+# 1. Count() - Return the number of times the value 5 appears in the tuple
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5, 8)
+x = thistuple.count(8)
+print(x)
+
+# 2. index() - Search for the first occurrence of the value 8, and return its position
+thistuple = (1, 8, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.index(8)
+print(x)
+
