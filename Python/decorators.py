@@ -1,0 +1,1 @@
+# function can take another function as an argumen
