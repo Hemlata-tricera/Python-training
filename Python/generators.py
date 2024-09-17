@@ -1,3 +1,5 @@
+# A generator is a function that returns an iterator that produces a sequence of values when iterated over.
+
 def even_generator():
     n = 0
 
