@@ -90,3 +90,41 @@ def printer(msg):
 printer("Decorators are wonderful")
 
 
+
+def salary(bonus):
+    def only_salary():
+        print("Before the function")
+        print(bonus() + 1000)
+
+        print("After function")
+    return only_salary
+
+
+
+@salary
+def salary_with_bonus():
+    print("My salary with bonus")
+    return 500
+
+
+# result = salary(salary_with_bonus)
+# print(result)
+salary_with_bonus()
+
+
+
+# Practice Example
+def smart_div(func):
+    def inner(a, b):
+        if a < b:
+            a, b = b, a
+        return func(a, b)
+    return inner
+
+@smart_div
+def div(a, b):
+    print(a / b)
+
+
+div(2, 4)
+
