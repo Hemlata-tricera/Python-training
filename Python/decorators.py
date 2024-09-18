@@ -128,3 +128,23 @@ def div(a, b):
 
 div(2, 4)
 
+
+# practice example-2
+def greet(fx):
+    def mfx(*args, **kwargs):
+        print("Good Morning")
+        fx(*args, **kwargs)
+        print("Thanks for using this function")
+    return mfx
+
+@greet
+def hello():
+    print("Hello world")
+
+@greet
+def add(a, b):
+    print(a + b)
+
+
+hello()
+add(2, 5)
