@@ -1,3 +1,5 @@
+
+--ALl SQL Topics except advanced topic
 --To select particular columns we can name the columns:
 
 select customer_id, store_id from customer;
@@ -771,7 +773,7 @@ SELECT * FROM Students WHERE courseid BETWEEN 101 AND 102;
 
 
 --SQL INDEX - Indexing creates a separate memory location and stored column in a sorted manner and also save pointer for memory location
---Create an Index- Now, let’s create an index on the last_name column to speed up queries that filter by last name.
+--Create an Index- Now, letï¿½s create an index on the last_name column to speed up queries that filter by last name.
 create index idx_lastname on students(lastname);
 
 /* Step 3: Querying with the Index-Now, when you query the Students table using the last_name column, 
